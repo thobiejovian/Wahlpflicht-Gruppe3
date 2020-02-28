@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <title>Example riot.js App</title>
+
+  </head>
+  <body>
+    <app></app>
+    
+    <script src="axios/axios.min.js"></script>
+    <script type="riot/tag" src="tags/app.tag"></script>
+    <script type="riot/tag" src="tags/navbar.tag"></script>
+    <script type="riot/tag" src="tags/users.tag"></script>
+    <script type="riot/tag" src="tags/page2.tag"></script>
+    <script src="riotjs/riot+compiler.min.js"></script>
+
+    <script>
+    // Set up routing base:
+    riot.route.base(location.pathname + '#')
+    // Start the app
+    riot.mount('app')
+    </script>
+  </body>
+</html>
